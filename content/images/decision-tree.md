@@ -1,15 +1,15 @@
 ---
-title: "An alt Decision Tree"
-title_html: "An <code>alt</code> Decision Tree"
+title: "Árvore de Decisão para Textos Alternativos"
+title_html: "Arvore de Decisão para <code>alt</code>"
 permalink: /tutorials/images/decision-tree/
-ref: /tutorials/images/decision-tree/
-lang: en
+ref: /tutorials/images/decision-tree-ptbr/
+lang: pt-br
 description:
 image: /content-images/wai-tutorials/images/social.png
 github:
   branch: 'master-2.0'
   repository: w3c/wai-tutorials
-  path: 'content/images/decision-tree.md'
+  path: 'content/images/decision-tree-ptbr.md'
 
 resource:
   ref: /tutorials/images/
@@ -21,58 +21,58 @@ wcag_techniques:
 
 
 metafooter: true
-last_updated: 2017-04-12
+last_updated: 2023-05-12
 editors:
   - Eric Eggert: "https://www.w3.org/People/yatil/"
   - Shadi Abou-Zahra: "https://www.w3.org/People/shadi/"
 update_editors:
   - Brian Elton
 contributors:
-  - see <a href="/WAI/tutorials/acknowledgements/">Acknowledgements</a>
-support: Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT project</a>, co-funded by the <strong>European Commission <abbr title="Information Society Technologies">IST</abbr> Programme</strong>.
+  - veja <a href="/WAI/tutorials/acknowledgements/">Acknowledgements</a>
+suporte: Desenvolvido pelo Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Criado com o suporte do <a href="https://www.w3.org/WAI/ACT/">WAI-ACT project</a>, co-fundado pelo <strong>Programa <abbr title="Information Society Technologies">IST</abbr> da Comissão Européia</strong>.
 ---
 
 {::nomarkdown}
 {% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
 
-This decision tree describes how to use the `alt` attribute of the `<img>` element in various situations. For some types of images, there are alternative approaches, such as using CSS background images for decorative images or web fonts instead of images of text.
+Esta árvore de decisão descreve como usar o atributo `alt` em elementos <img> em diversas situações. Para diferentes tipos de imagens podem ser usadas abordagens diferentes, como usando imagens de fundo CSS para imagens decorativas ou web fonts ao invés de imagens contendo só textos.
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
-- **Does the image contain text?**
-  - {:.yes} **Yes:**
-    -   **… and the text is also present as *real* text nearby.**
-      _Use an empty `alt` attribute. See [Decorative Images](/tutorials/images/decorative/)._
-    -   **… and the text is only shown for visual effects.**
-      _Use an empty `alt` attribute. See [Decorative Images](/tutorials/images/decorative/)._
-    -   **… and the text has a specific function, for example is an icon.**
-      _Use the `alt` attribute to communicate the function of the image. See [Functional Images](/tutorials/images/functional/)._
-    -   **… and the text in the image is not present otherwise.** _Use the `alt` attribute to include the text of the image. See [Images of Text](/tutorials/images/textual/#image-of-styled-text-with-decorative-effect)._
-  - {:.no} **No:**
+- **A imagem contém texto?**
+  - {:.yes} **Sim:**
+    -   **… e o mesmo texto também está presente e próximo como um texto *real*.**
+      _Use o atributo `alt` vazio. Veja [Decorative Images](/tutorials/images/decorative/) (em Inglês)._
+    -   **… e o texto é somente um efeito visual.**
+      _Use o atributo `alt` vazio. Veja [Decorative Images](/tutorials/images/decorative/) (em Inglês)._
+    -   **… e o texto tem uma função específica, como por exemplo ser um ícone.**
+      _Use o atributo `alt` para comunicar a função da imagem. Veja [Functional Images](/tutorials/images/functional/) (em Inglês)._
+    -   **… e o texto na imagem não estaria presente de outra forma.** _Use o atributo `alt` para incluir o texto da imagem. Veja [Images of Text](/tutorials/images/textual/#image-of-styled-text-with-decorative-effect) (em Inglês)._
+  - {:.no} **Não:**
     - Continue.
-- **Is the image used in a link or a button, and would it be hard or impossible to understand what the link or the button does, if the image wasn’t there?**
-  - {:.yes} **Yes:**
-    - _Use the `alt` attribute to communicate the destination of the link or action taken. See [Functional Images](/tutorials/images/functional/)._
-  - {:.no} **No:**
+- **A imagem é usada em um link ou botão, e seria difícil ou impossível entender o que tal link/botão faz caso a imagem não estivesse ali?**
+  - {:.yes} **Sim:**
+    -  _Use o atributo `alt` para comunicar a página de destino do link ou a ação que o botão iniciará. Veja [Functional Images](/tutorials/images/functional/) (em Inglês)._
+  - {:.no} **Não:**
     - Continue.
-- **Does the image contribute meaning to the current page or context?**
-  - {:.yes} **Yes:**
-    - **… and it’s a simple graphic or photograph.**
-      _Use a brief description of the image in a way that conveys that meaning in the `alt` attribute. See [Informative Images](/tutorials/images/informative/)._
-    - **… and it’s a graph or complex piece of information.**
-      _Include the information contained in the image elsewhere on the page. See [Complex Images](/tutorials/images/complex/)._
-    - **… and it shows content that is redundant to *real* text nearby.**
-      _Use an empty `alt` attribute. See (redundant) [Functional Images](/tutorials/images/functional/#logo-image-within-link-text)._
-  - {:.no} **No:**
+- **A imagem contribui para o entendimento da página ou seu contexto?**
+  - {:.yes} **Sim:**
+    - **… e é um elemento visual simples ou uma foto.**
+      _Use uma descrição curta da imagem para descrever qual contexto ou significado ela transmite no atributo `alt`. Veja [Informative Images](/tutorials/images/informative/)(em Inglês)._
+    - **… e é um gráfico ou um elemento visual complexo.**
+      _Inclua a informação continda na imagem em outro lugar na página. Veja [Complex Images](/tutorials/images/complex/) (em Inglês)._
+    - **… e ela mostra conteúdo que é redundante com algum texto *real* que esteja próximo dela.**
+      _Use o atributo `alt` vazio. Veja (redundant) [Functional Images](/tutorials/images/functional/#logo-image-within-link-text)(em Inglês)._
+  - {:.no} **Não:**
     - Continue.
-- **Is the image purely decorative or not intended for the user?**
-  - {:.yes} **Yes:**
-    - _Use an empty `alt` attribute. See [Decorative Images](/tutorials/images/decorative/)._
-  - {:.no} **No:**
+- **A imagem é meramente decorativa ou não destinada ao usuário?**
+  - {:.yes} **Sim:**
+    - _Use o atributo `alt` vazio. Veja [Decorative Images](/tutorials/images/decorative/) (em Inglês)._
+  - {:.no} **Não:**
     - Continue.
-- **Is the image’s use not listed above or it’s unclear what `alt` text to provide?**
-  - {:.yes} This decision tree **does not** cover all cases. For detailed information on the provision of text alternatives refer to the [Image Concepts Page](/tutorials/images/).
+- **O tipo de uso da imagem não está contemplado acima ou não é claro qual `alt` fornecer?**
+  - {:.yes} Esta árvore de decisão **não contempla** todos os casos. Para informações mais detalhadas no fornecimento de textos alternativos, confira a página [Image Concepts Page](/tutorials/images/) (em Inglês).
 {:.decision-tree}
