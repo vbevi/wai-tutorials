@@ -36,7 +36,8 @@ suporte: Desenvolvido pelo Education and Outreach Working Group (<a href="https:
 {% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
 
-Esta árvore de decisão descreve como usar o atributo `alt` em elementos <img> em diversas situações. Para diferentes tipos de imagens podem ser usadas abordagens diferentes, como usando imagens de fundo CSS para imagens decorativas ou web fonts ao invés de imagens contendo só textos.
+Esta árvore de decisão descreve como usar o atributo `alt` em elementos <img>, considerando diversas situações. 
+Diferentes tipos de imagens podem ser precisar de abordagens diferentes, como o uso de imagens de fundo em CSS (para imagens decorativas) ou web fonts ao invés de imagens contendo só textos.
 
 {::nomarkdown}
 {% include box.html type="end" %}
